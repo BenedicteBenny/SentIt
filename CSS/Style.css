@@ -106,10 +106,17 @@ header ul{
 form select{
 	width: 92%;
 }
-
+#name {
+	width: 50%;
+	text-align: left;
+}
+#Destination{
+	width: 90%;
+}
 form input, select{
+	width: 28%;
     padding: .5em .25em;
-    margin: 0 3% 1em;    
+    margin: 2% 10%;   
     outline: none;
     border-radius: 8px;
     font-size: 16px;
@@ -126,8 +133,15 @@ input[type=number]::-webkit-outer-spin-button{
   -webkit-appearance: none; 
   margin: 0; 
 }
-
-
+ button{
+	background-color: #ad974f;
+	padding:10px 20px 10px 20px;
+	text-align: center;
+	width: 49.5%;
+	border: solid 1px #ad974f;
+	color: #eaeaea;
+	font-size: 16px;
+}
 
 /*Overview*/
 #Overview{

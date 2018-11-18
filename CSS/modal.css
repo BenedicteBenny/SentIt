@@ -1,6 +1,6 @@
 /*Modal*/
 .modal{
-	display: block;
+	display: none;
 	position: fixed;
 	padding: 30px;
 	z-index: 1;
@@ -127,11 +127,11 @@
 	padding: 40px;
 }
 
-form select{
+.modalForm select{
 	width: 92%;
 }
 
-form input, select{
+.modalForm input, select{
 	width: 70%;
     padding: .5em .25em;
     margin: 2% 10%;   
@@ -142,16 +142,16 @@ form input, select{
     background-color: #231f20;
     color: #eaeaea;
 }
-input:hover,select:hover{
+.modalForm input:hover,.modalForm select:hover{
 	border: solid 1px #ad974f;
 	opacity: 0.7;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button{ 
+.modalForm input[type=number]::-webkit-inner-spin-button, 
+.modalForm input[type=number]::-webkit-outer-spin-button{ 
   -webkit-appearance: none; 
   margin: 0; 
 }
- button{
+.modalForm button{
 	background-color: #ad974f;
 	padding:10px 20px 10px 20px;
 	text-align: center;
