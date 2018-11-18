@@ -5,28 +5,25 @@ function getorder(){
 	var wt=document.getElementById("weight").value;
 	var ht=document.getElementById("height").value;
 	var wd=document.getElementById("width").value;
-	var vl=document.getElementById("value").value;
+	var nm=document.getElementById("name").value;
 	
 
 //Set parcel delivery price based on the parcel weight 0.10per kg
 	var price=0.1*wt;
 
 	
-//check the parcel weight
-	if(wt>=100){
-		document.getElementById("pickUp").innerHTML=("The package is too heavy to be transported.<br> Please consult other parcel delivery servicesfor more help");
-
-	}
+//validate the parcel order
+	if(pick=="" || dest=="" || wt=="" || ht=="" || wd=="" || vl==""){
+		alert("Please enter all parcel details");
+		modal.style.display = "none";
+	}	
 //Display all parcel details
 	else{
 		document.getElementById("pickUp").innerHTML=(" Pick up location: "+pick+"<br> Destination location: "+dest+
-		"<br> Parcel weight: "+wt+"<br> Parcel height: "+ht+"<br> Parcel width: "+wd+"<br> Parcel value: "+vl+"<br> Delivery service price: "+price);
+		"<br> Parcel value: "+nm+"<br> Parcel weight: "+wt+"<br> Parcel height: "+ht+"<br> Parcel width: "+wd+"<br>  Delivery service price: "+price);
+		
 	}
-//validate the parcel order
-	if(pick==""||dest==""||wt==""||ht==""||wd==""||vl==""){
-		alert("Please enter all parcel details");
-		modal.style.display = "none";
-	}
+
 //
 }
 //Display the parcel data in the modal
