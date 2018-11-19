@@ -4,7 +4,8 @@ function getorder(){
 	var wt=document.getElementById("weight").value;
 	var ht=document.getElementById("height").value;
 	var wd=document.getElementById("width").value;
-	var vl=document.getElementById("value").value;
+	var nm=document.getElementById("name").value;
+	var lg=document.getElementById("length").value;
 
 
 //Set parcel delivery price based on the parcel weight 0.10per kg
@@ -23,6 +24,7 @@ function getorder(){
 	document.getElementById("weight").innerHTML= wt;
 	document.getElementById("height").innerHTML= ht;
 	document.getElementById("width").innerHTML= wd;
+	document.getElementById("length").innerHTML= lg;
 	document.getElementById("price").innerHTML= price;
 	}
 	//validate the parcel order

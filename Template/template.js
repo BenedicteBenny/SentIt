@@ -1,3 +1,6 @@
+// Get the modal
+var modal = document.getElementById("orderModal");
+
 //Get parcel data 
 function getorder(){
 	var pick=document.getElementById("pickuplo").value;
@@ -6,6 +9,7 @@ function getorder(){
 	var ht=document.getElementById("height").value;
 	var wd=document.getElementById("width").value;
 	var nm=document.getElementById("name").value;
+	var lg=document.getElementById("length").value;
 	
 
 //Set parcel delivery price based on the parcel weight 0.10per kg
@@ -13,22 +17,27 @@ function getorder(){
 
 	
 //validate the parcel order
-	if(pick=="" || dest=="" || wt=="" || ht=="" || wd=="" || vl==""){
+	if(pick=="" || dest=="" || wt=="" || ht=="" || wd=="" || nm=="" || lg==""){
 		alert("Please enter all parcel details");
 		modal.style.display = "none";
 	}	
 //Display all parcel details
 	else{
-		document.getElementById("pickUp").innerHTML=(" Pick up location: "+pick+"<br> Destination location: "+dest+
-		"<br> Parcel value: "+nm+"<br> Parcel weight: "+wt+"<br> Parcel height: "+ht+"<br> Parcel width: "+wd+"<br>  Delivery service price: "+price);
+		console("it is working");
+		document.getElementById("name").innerHTML= nm;
+		document.getElementById("pickup").innerHTML= pick;
+		document.getElementById("des").innerHTML= dest;
+		document.getElementById("weight").innerHTML= wt;
+		document.getElementById("height").innerHTML= ht;
+		document.getElementById("width").innerHTML= wd;
+		document.getElementById("length").innerHTML= lg;
+		document.getElementById("price").innerHTML= price;
 		
 	}
 
 //
 }
 //Display the parcel data in the modal
-// Get the modal
-var modal = document.getElementById("orderModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("orderBtn");

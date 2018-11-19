@@ -19,6 +19,7 @@
 	margin: 0% auto;
 	background-color: white;
 	padding: 2% 7%;
+	border-radius: 8px;
 }
 .modal-header{
 	border-radius: 8px 8px 0 0;
@@ -44,8 +45,9 @@
 	background-color: white;
 	width: 84%;
 	margin: auto;
-	height: 5%;
+	height: 10%;
 	text-align: center;
+	border-radius: 8px;
 }
 .modal-footer a{
 	background-color: #ad974f;
@@ -178,7 +180,7 @@ td{
 .total h3{
 	border-bottom: 0px;
 }
-#name, #pickup, #des, #weight, #height, #width, #price{
+#name, #pickup, #des, #weight, #height, #width, #price, #length{
 	text-align: right;
 }
 
